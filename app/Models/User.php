@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function absensi()
+    {
+        return $this->hasMany(Absensi::class);
+    }
+
 }
